@@ -1,0 +1,42 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+PS E:\GitProject> git init
+Initialized empty Git repository in E:/GitProject/.git/
+PS E:\GitProject> git add .
+PS E:\GitProject> git commit -m "N1"
+[master (root-commit) ec4e47d] N1
+ 3 files changed, 24 insertions(+)
+ create mode 100644 INDEX.html
+ create mode 100644 NEWS.html
+ create mode 100644 README.md
+PS E:\GitProject> git brach -M main
+
+PS E:\GitProject> git branch -M main
+PS E:\GitProject> git remote add origin https://github.com/lamhungdu/GitProject.git
+PS E:\GitProject> git push -u origin main
+Enumerating objects: 5, done.
+Delta compression using up to 4 threads
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Reinitialized existing Git repository in E:/GitProject/.git/
+PS E:\GitProject> git add INDEX.html NEWS.html
+PS E:\GitProject> git commit -m"N2"
+On branch main
+Your branch is up to date with 'origin/main'.
+************************************************
+Windows PowerShell
+PS E:\GitProject> git init
+Reinitialized existing Git repository in E:/GitProject/.git/
+PS E:\GitProject> git add .
+PS E:\GitProject> git commit -m"N2"
+[main 98adb64] N2
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+PS E:\GitProject> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 368 bytes | 368.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/lamhungdu/GitProject.git
+   ec4e47d..98adb64  main -> main
